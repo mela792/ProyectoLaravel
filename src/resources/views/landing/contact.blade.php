@@ -1,16 +1,37 @@
-<h1>Este es mi página de contact</h1>
-<form>
-    <label>Nombre:</label><br>
-    <input type="text" name="nombre" required>
-    <br><br>
+@extends('landing.layouts.landing')
 
-    <label>Correo electrónico:</label><br>
-    <input type="email" name="email" required>
-    <br><br>
+@section('title', 'Contacto - FPConnect')
 
-    <label>Mensaje:</label><br>
-    <textarea name="mensaje" rows="4" cols="30" required></textarea>
-    <br><br>
+@section('header')
+    <h1>Contacto</h1>
+@endsection
 
-    <button type="submit">Enviar</button>
-</form>
+@section('content')
+
+    <h2>Contacta con FPConnect</h2>
+
+    <p>Si tienes alguna duda o sugerencia,
+        puedes ponerte en contacto con nosotros.</p>
+
+    <h3>Formulario de contacto</h3>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+
+        <br><br>
+
+        <button type="button">Enviar</button>
+    </form>
+
+@endsection

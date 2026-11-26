@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        @include('_partials.nav') <!--incluye el menú-->
+        @include('_partials.nav')
         @yield('header')
     </header>
 
@@ -17,9 +17,7 @@
         @yield('content')
     </main>
 
-    <footer>
-        <p>FPConnect &copy; 2026</p>
-    </footer>
+    @include('_partials.footer')
 
 </body>
 

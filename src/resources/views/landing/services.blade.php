@@ -1,35 +1,46 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('landing.layouts.landing')
 
-<head>
-    <meta charset="UTF-8">
-    <title>Servicios - FPConnect</title>
-</head>
+@section('title', 'Servicios - FPConnect')
 
-<body>
+@section('header')
+    <h1>Servicios de FPConnect</h1>
+@endsection
 
-    <header>
-        <h1>Servicios de FPConnect</h1>
-    </header>
+@section('content')
 
-    <main>
-        <p>Estos son los servicios que ofrecemos
-            a los estudiantes de Formación Profesional.</p>
+    <h2>¿Qué ofrecemos?</h2>
 
-        <h2>Nuestros servicios</h2>
+    <p>FPConnect ofrece diferentes servicios
+        para ayudar a los estudiantes de
+        Formación Profesional.</p>
 
-        <ul>
-            <li>Resolver dudas de programación.</li>
-            <li>Compartir apuntes y recursos.</li>
-            <li>Consultar ofertas de prácticas.</li>
-            <li>Ayudar a otros compañeros.</li>
-        </ul>
-    </main>
+    <h2>Nuestros servicios</h2>
 
-    <footer>
-        <p>FPConnect &copy; 2026</p>
-    </footer>
+    <ul>
+        <li>
+            <h3>Ayuda entre compañeros</h3>
+            <p>Los estudiantes podrán compartir
+                sus dudas de programación y recibir
+                ayuda de otros compañeros.</p>
+        </li>
 
-</body>
+        <li>
+            <h3>Compartir apuntes</h3>
+            <p>Podrán compartir apuntes,
+                ejercicios y materiales de estudio.</p>
+        </li>
 
-</html>
+        <li>
+            <h3>Prácticas en empresas</h3>
+            <p>Información sobre empresas
+                y oportunidades de prácticas.</p>
+        </li>
+
+        <li>
+            <h3>Comunidad estudiantil</h3>
+            <p>Un espacio para compartir
+                experiencias y conocimientos.</p>
+        </li>
+    </ul>
+
+@endsection
