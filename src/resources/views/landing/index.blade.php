@@ -18,7 +18,7 @@
         para disfrutar de tus vacaciones.</p>
 
     <div style="text-align: center;">
-        <img src="{{ asset('images/portada.jpg') }}" alt="Imagen de destinos turísticos" width="600">
+        <img src="{{ asset('images/Portada.jpg') }}" alt="Imagen de destinos turísticos" width="600">
     </div>
 
 @endsection
